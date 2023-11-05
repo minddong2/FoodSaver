@@ -109,7 +109,7 @@
             "outputFile": "com.example.refri_project.app-merged_res-11:/values-night-v8_values-night-v8.arsc.flat",
             "map": [
                 {
-                    "source": "/Users/minji/Documents/refri_project19/android/app/src/main/res/values-night/styles.xml",
+                    "source": "/Users/minji/Documents/FoodSaver/android/app/src/main/res/values-night/styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",
@@ -238,7 +238,7 @@
             "outputFile": "com.example.refri_project.app-merged_res-11:/values-ko-rKR_values-ko-rKR.arsc.flat",
             "map": [
                 {
-                    "source": "/Users/minji/Documents/refri_project19/android/app/src/main/res/values-ko-rKR/strings.xml",
+                    "source": "/Users/minji/Documents/FoodSaver/android/app/src/main/res/values-ko-rKR/strings.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -1003,42 +1003,6 @@
             "outputFile": "com.example.refri_project.app-merged_res-11:/values_values.arsc.flat",
             "map": [
                 {
-                    "source": "/Users/minji/Documents/refri_project19/android/app/src/main/res/values/strings.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "48",
-                        "endOffsets": "99"
-                    },
-                    "to": {
-                        "startLines": "92",
-                        "startColumns": "4",
-                        "startOffsets": "5391",
-                        "endColumns": "48",
-                        "endOffsets": "5435"
-                    }
-                },
-                {
-                    "source": "/Users/minji/Documents/refri_project19/android/app/src/main/res/values/styles.xml",
-                    "from": {
-                        "startLines": "3,14",
-                        "startColumns": "4,4",
-                        "startOffsets": "173,818",
-                        "endLines": "7,16",
-                        "endColumns": "12,12",
-                        "endOffsets": "476,982"
-                    },
-                    "to": {
-                        "startLines": "94,98",
-                        "startColumns": "4,4",
-                        "startOffsets": "5511,5692",
-                        "endLines": "97,100",
-                        "endColumns": "12,12",
-                        "endOffsets": "5687,5856"
-                    }
-                },
-                {
                     "source": "/Users/minji/.gradle/caches/transforms-3/7e9df2ac2213a6bd3cef0f2f27870d79/transformed/core-1.6.0/res/values/values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,89,90,94,95,96,97,104,111,159,191,228",
@@ -1074,6 +1038,42 @@
                         "endLines": "7,8,9,10,72,119,123,237,249,257",
                         "endColumns": "11,59,51,44,59,24,24,24,24,24",
                         "endOffsets": "289,349,401,446,4387,6948,7079,11036,11476,11785"
+                    }
+                },
+                {
+                    "source": "/Users/minji/Documents/FoodSaver/android/app/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "48",
+                        "endOffsets": "99"
+                    },
+                    "to": {
+                        "startLines": "92",
+                        "startColumns": "4",
+                        "startOffsets": "5391",
+                        "endColumns": "48",
+                        "endOffsets": "5435"
+                    }
+                },
+                {
+                    "source": "/Users/minji/Documents/FoodSaver/android/app/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "3,14",
+                        "startColumns": "4,4",
+                        "startOffsets": "173,818",
+                        "endLines": "7,16",
+                        "endColumns": "12,12",
+                        "endOffsets": "476,982"
+                    },
+                    "to": {
+                        "startLines": "94,98",
+                        "startColumns": "4,4",
+                        "startOffsets": "5511,5692",
+                        "endLines": "97,100",
+                        "endColumns": "12,12",
+                        "endOffsets": "5687,5856"
                     }
                 }
             ]
