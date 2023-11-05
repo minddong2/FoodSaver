@@ -1,0 +1,7 @@
+version: "Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)"
+options: "462f3e66fd9da9ddb7694d351a666a4421ae0d7908c82283fbfe620892ab9966"
+build_start_time: [1695726564, 217555999]
+build_end_time: [1695726599, 669301986]
+inputs:
+  "/Users/minji/.pub-cache/hosted/pub.dev/path_provider_foundation-2.3.1/darwin/Classes/PathProviderPlugin.swift": [1695468046, 196224927]
+  "/Users/minji/.pub-cache/hosted/pub.dev/path_provider_foundation-2.3.1/darwin/Classes/messages.g.swift": [1695468046, 193212032]

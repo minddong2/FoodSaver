@@ -1,0 +1,15 @@
+{
+    "java.format.settings.url": ".vscode/java-formatter.xml",
+    "java.completion.lazyResolveTextEdit.enabled": true,
+    "xmlTools.enableXmlTreeViewCursorSync": false,
+    "xmlTools.xqueryExecutionArguments": [
+        "-xquery",
+        "$(script)",
+        "-in",
+        "$(input)",
+        "-out",
+        "$(input).output.xml"
+    ],
+    "cmake.sourceDirectory": "/Users/minji/Documents/refri_project 18/linux"
+
+}

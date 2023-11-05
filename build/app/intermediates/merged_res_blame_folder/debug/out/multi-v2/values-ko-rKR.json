@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.example.refri_project.app-mergeDebugResources-9:/values-ko-rKR/values-ko-rKR.xml",
+            "map": [
+                {
+                    "source": "/Users/minji/Documents/refri_project19/android/app/src/main/res/values-ko-rKR/strings.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "47",
+                        "endOffsets": "98"
+                    }
+                }
+            ]
+        }
+    ]
+}

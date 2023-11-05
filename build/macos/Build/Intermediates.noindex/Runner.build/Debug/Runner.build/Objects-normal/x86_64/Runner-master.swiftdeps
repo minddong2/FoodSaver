@@ -1,0 +1,8 @@
+version: "Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)"
+options: "de4865820596061274818a8dd8e29ce6a8247f94e26ab5d2310a1911adb3a6c9"
+build_start_time: [1695726642, 907154083]
+build_end_time: [1695726658, 623438835]
+inputs:
+  "/Users/minji/Documents/refri_project 18/macos/Flutter/GeneratedPluginRegistrant.swift": [1695726537, 405086278]
+  "/Users/minji/Documents/refri_project 18/macos/Runner/AppDelegate.swift": [1692812477, 0]
+  "/Users/minji/Documents/refri_project 18/macos/Runner/MainFlutterWindow.swift": [1692812477, 0]

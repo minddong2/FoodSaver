@@ -1,0 +1,13 @@
+{
+    "java.format.settings.url": ".vscode/java-formatter.xml",
+    "java.completion.lazyResolveTextEdit.enabled": true,
+    "xmlTools.enableXmlTreeViewCursorSync": true,
+    "xmlTools.xqueryExecutionArguments": [
+        "-xquery",
+        "$(script)",
+        "-in",
+        "$(input)",
+        "-out",
+        "$(input).output.xml",
+    ]
+}
