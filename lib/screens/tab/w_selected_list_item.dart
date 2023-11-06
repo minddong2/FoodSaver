@@ -6,6 +6,7 @@ import 'package:velocity_x/velocity_x.dart';
 
 class SelectedListItem extends StatelessWidget {
   final FoodSummary foodSummary;
+
   const SelectedListItem(this.foodSummary, {super.key});
 
   @override
@@ -15,11 +16,15 @@ class SelectedListItem extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 10),
       child: Row(
         children: [
-          Image.asset(foodSummary.foodImagePath, width: 50),
-          width20,
-          (foodSummary.foodName).text.size(16).bold.make(),
-          emptyExpanded,
+          Column(
+            children: [
+              Image.asset(foodSummary.foodImagePath, width: 50),
+              height20,
+              (foodSummary.foodName).text.size(16).bold.make(),
+            ],
+          )
         ],
-      ),);
+      ),
+    );
   }
 }

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:refri_project/screens/home/home_list_screen.dart';
+import 'package:refri_project/screens/home/list/home_list_screen.dart';
 import 'package:refri_project/style/theme.dart';
 
 // 깃 업로드 테스트

@@ -35,7 +35,7 @@ class FabMenu extends StatelessWidget {
               },
             );
           },
-          icon: const Icon(Icons.home),
+          icon: const Icon(Icons.edit_note),
           color: Colors.red,
           labelColor: Colors.blue,
         ),
@@ -47,7 +47,7 @@ class FabMenu extends StatelessWidget {
               const SnackBar(content: Text('Menu 2 selected')),
             );
           },
-          icon: const Icon(Icons.comment),
+          icon: const Icon(Icons.receipt),
           labelColor: Colors.white,
           labelBackgroundColor: Colors.blue,
         ),
@@ -59,7 +59,7 @@ class FabMenu extends StatelessWidget {
               const SnackBar(content: Text('Menu 3 selected')),
             );
           },
-          icon: const Icon(Icons.add_a_photo),
+          icon: const Icon(Icons.document_scanner),
         ),
       ],
       body: Container(),

@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:refri_project/screens/home/list/home_selected_list.dart';
+import 'package:refri_project/screens/tab/fab/w_unselected_food_icon.dart';
 
 class PopUpItemBody extends StatelessWidget {
   const PopUpItemBody({
@@ -11,32 +13,14 @@ class PopUpItemBody extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          const TextField(
-            decoration: InputDecoration(
-              hintText: 'New todo',
-              border: InputBorder.none,
-            ),
-            cursorColor: Colors.white,
-          ),
+          UnselectedIconFragment(),
           const Divider(
-            color: Colors.white,
-            thickness: 0.2,
-          ),
-          const TextField(
-            decoration: InputDecoration(
-              hintText: 'Write a note',
-              border: InputBorder.none,
-            ),
-            cursorColor: Colors.white,
-            maxLines: 6,
-          ),
-          const Divider(
-            color: Colors.white,
+            color: Colors.black,
             thickness: 0.2,
           ),
           TextButton(
             onPressed: () {},
-            child: const Text('Add'),
+            child: const Text('총 n개의 재료 추가하기'),
           ),
         ],
       ),
