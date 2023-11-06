@@ -7,66 +7,36 @@ class HomeSelectedIcon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
-    return
-      Stack(
-
-        children: [
-          Container(
-
-            color: Colors.red,
-
-            width: double.infinity,
-            height: 35,
-            child:Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                "냉장".text.make(),
-              ],
-            ),
-          ),
-
-          IngreDient(type: 'Cold'),
-          Container(
-            margin: EdgeInsets.only(top: (MediaQuery.of(context).size.height / 2) -70),
-            color: Colors.red,
-            width: double.infinity,
-            height: 35,
-            child:Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                "냉동".text.make()
-              ],
-            ),
-          ),
-          IngreDient(type: 'Iced'),
-        ],
-      );
-  }
-}
-
-class ColdFoodIcon extends StatelessWidget {
-  const ColdFoodIcon({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return const SingleChildScrollView(
-      child: Column(
-        children: [
-          Row(
+    return Stack(
+      children: [
+        Container(
+          color: Colors.red,
+          width: double.infinity,
+          height: 35,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Icon(
-                Icons.more_horiz,
-                size: 50,
-              ),
+              "냉장".text.make(),
             ],
           ),
-        ],
-      ),
+        ),
+        IngreDient(type: 'Cold'),
+        Container(
+          margin: EdgeInsets.only(
+              top: (MediaQuery.of(context).size.height / 2) - 70),
+          color: Colors.red,
+          width: double.infinity,
+          height: 35,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: ["냉동".text.make()],
+          ),
+        ),
+        IngreDient(type: 'Iced'),
+      ],
     );
   }
 }
-
 typedef Next = Widget Function();
 
 class Item {

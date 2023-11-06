@@ -1,8 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:refri_project/screens/home/f_my_food_list.dart';
 import 'package:refri_project/screens/home/home_selected_icon.dart';
+import 'package:refri_project/screens/home/home_selected_list.dart';
 import 'package:refri_project/screens/setting/setting_screen.dart';
+import 'package:refri_project/screens/tab/fab/fab.dart';
 
 
 class HomeListScreen extends StatefulWidget {
@@ -20,9 +23,9 @@ class _HomeListScreenState extends State<HomeListScreen> {
       widgetBuilder: (context) => HomeSelectedIcon(),
     ),
     _BottomNavigationItem(
-      label: '테스트',
+      label: '리스트',
       iconData: Icons.search,
-      widgetBuilder: (context) => HomeSelectedIcon(),
+      widgetBuilder: (context) => const MyFoodListFragment(),
     ),
     _BottomNavigationItem(
       label: '설정',
@@ -77,6 +80,7 @@ class _HomeListScreenState extends State<HomeListScreen> {
       )
           .toList(),
     ),
+    floatingActionButton: FabMenu(),
   );
 }
 
