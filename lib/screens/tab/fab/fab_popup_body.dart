@@ -8,20 +8,22 @@ class PopUpItemBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          UnselectedIconFragment(),
-          const Divider(
-            color: Colors.black,
-            thickness: 0.2,
-          ),
-          TextButton(
-            onPressed: () {},
-            child: const Text('총 n개의 재료 추가하기'),
-          ),
-        ],
+    return SingleChildScrollView(
+      child: Center(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            UnselectedIconFragment(),
+            const Divider(
+              color: Colors.black,
+              thickness: 0.2,
+            ),
+            TextButton(
+              onPressed: () {},
+              child: const Text('총 n개의 재료 추가하기'),
+            ),
+          ],
+        ),
       ),
     );
   }
