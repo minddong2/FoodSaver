@@ -3,8 +3,8 @@ import 'package:refri_project/screens/tab/fab/w_unselected_icon_item.dart';
 import 'package:refri_project/screens/tab/food_list.dart';
 
 
-class UnselectedIcon extends StatelessWidget {
-  const UnselectedIcon({super.key});
+class UnSelectedIcon extends StatelessWidget {
+  const UnSelectedIcon({super.key});
 
   @override
   Widget build(BuildContext context) {

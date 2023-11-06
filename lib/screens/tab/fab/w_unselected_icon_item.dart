@@ -14,7 +14,7 @@ class UnselectedIconItem extends StatelessWidget {
     return Container(
       color: Colors.white,
       padding: const EdgeInsets.symmetric(vertical: 10),
-      child: Row(
+      child: Column(
         children: [
           Image.asset(foodSummary.foodImagePath, width: 50),
           height10,
