@@ -10,7 +10,8 @@ class MyFoodListFragment extends StatelessWidget {
   Widget build(BuildContext context) {
     return SingleChildScrollView(
       child: Column(
-        children: [getMyFoodList(context)],
+        children: [
+          getMyFoodList(context)],
       ),
     );
   }
@@ -25,7 +26,7 @@ class MyFoodListFragment extends StatelessWidget {
             width150,
             '유통기한'.text.size(16).bold.make(),
           ]),
-          const MySelectedList(),
+          MySelectedList(),
         ],
       );
 }

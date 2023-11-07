@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:refri_project/screens/tab/food_list.dart';
+import 'package:refri_project/screens/tab/food/food_list.dart';
 import 'package:refri_project/screens/tab/w_selected_list_item.dart';
 
 class MySelectedList extends StatelessWidget {
