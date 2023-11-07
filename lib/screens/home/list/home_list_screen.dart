@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:refri_project/screens/home/list/f_my_food_list.dart';
 import 'package:refri_project/screens/home/icon/home_selected_icon.dart';
-import 'package:refri_project/screens/home/list/home_selected_list.dart';
 import 'package:refri_project/screens/setting/setting_screen.dart';
 import 'package:refri_project/screens/tab/fab/fab.dart';
 
