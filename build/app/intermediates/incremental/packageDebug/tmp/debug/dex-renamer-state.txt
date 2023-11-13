@@ -1,4 +1,4 @@
-#Tue Nov 07 15:03:49 KST 2023
+#Mon Nov 13 16:50:25 KST 2023
 base.0=/Users/minji/Documents/FoodSaver/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

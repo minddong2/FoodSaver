@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:refri_project/screens/tab/fab/w_unselected_food_icon.dart';
+import 'package:refri_project/screens/tab/fab/w_all_food_icon.dart';
 import 'package:refri_project/screens/tab/food/food_list.dart';
 import 'package:refri_project/screens/tab/food/vo_food.dart';
 
@@ -20,7 +20,7 @@ class PopUpItemBody extends StatelessWidget {
                 child: Column(
                   children: [
                     // 검색창 추가하기,
-                    UnselectedIconWidget(foodSummaries),
+                    AllIconWidget(foodSummaries),
                     const Divider(
                       color: Colors.black,
                       thickness: 0.2,

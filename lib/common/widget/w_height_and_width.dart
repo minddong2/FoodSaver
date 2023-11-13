@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+
 const width5 = Width(5);
 const width10 = Width(10);
 const width20 = Width(20);
@@ -14,6 +15,11 @@ const height10 = Height(10);
 const height20 = Height(20);
 const height30 = Height(30);
 
+const devicewidth4 = DeviceWidth(4);
+
+const deviceheight40 = DeviceHeight(40);
+
+
 class Height extends StatelessWidget {
   final double height;
 
@@ -24,6 +30,7 @@ class Height extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     return SizedBox(
       height: height,
     );
@@ -39,9 +46,50 @@ class Width extends StatelessWidget {
   }) : super(key: key);
 
   @override
+
   Widget build(BuildContext context) {
     return SizedBox(
       width: width,
+    );
+  }
+}
+
+
+class DeviceWidth extends StatelessWidget {
+  final double width;
+
+  const DeviceWidth(
+      this.width, {
+        Key? key,
+      }) : super(key: key);
+
+  @override
+
+  Widget build(BuildContext context) {
+    final deviceWidth = MediaQuery.of(context).size.width;
+    return SizedBox(
+
+      width: (deviceWidth/ width),
+    );
+  }
+}
+
+
+class DeviceHeight extends StatelessWidget {
+  final double height;
+
+  const DeviceHeight(
+      this.height, {
+        Key? key,
+      }) : super(key: key);
+
+  @override
+
+  Widget build(BuildContext context) {
+    final deviceHeight = MediaQuery.of(context).size.height;
+    return SizedBox(
+
+      height: (deviceHeight/ height),
     );
   }
 }

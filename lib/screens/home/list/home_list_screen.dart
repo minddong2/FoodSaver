@@ -1,8 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:refri_project/screens/home/icon/f_my_food_icon.dart';
 import 'package:refri_project/screens/home/list/f_my_food_list.dart';
-import 'package:refri_project/screens/home/icon/home_selected_icon.dart';
+import 'package:refri_project/screens/home/icon/home_selected_icon_lib.dart';
 import 'package:refri_project/screens/setting/setting_screen.dart';
 import 'package:refri_project/screens/tab/fab/fab.dart';
 
@@ -30,6 +31,11 @@ class _HomeListScreenState extends State<HomeListScreen> {
       label: '설정',
       iconData: Icons.more_horiz,
       widgetBuilder: (context) => SettingScreen(),
+    ),
+    _BottomNavigationItem(
+      label: '미래홈',
+      iconData: Icons.more_horiz,
+      widgetBuilder: (context) => MyFoodIconFragment(),
     ),
   ];
 
