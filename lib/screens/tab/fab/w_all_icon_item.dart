@@ -15,37 +15,36 @@ class AllIconItem extends StatefulWidget {
 class _AllIconItemState extends State<AllIconItem> {
   @override
   Widget build(BuildContext context) {
+    final deviceWidth = MediaQuery.of(context).size.width;
     List<Widget> items = [];
 
+    // 다음 4개의 음식 요약 정보를 가져오거나, 4개보다 적게 남았을 경우 남은 만큼 가져옵니다.
     for (int i = 0; i < widget.foodSummaries.length; i += 4) {
-      // 다음 4개의 음식 요약 정보를 가져오거나, 4개보다 적게 남았을 경우 남은 만큼 가져옵니다.
-      List<FoodSummary> sublist = widget.foodSummaries.sublist(i, i + 4);
+      List<FoodSummary> sublist;
+      if (widget.foodSummaries.length - i < 4) {
+        sublist = widget.foodSummaries.sublist(i, i + (widget.foodSummaries.length % 4));
+      } else {
+        sublist = widget.foodSummaries.sublist(i, i + 4);
+      }
 
       items.add(
         Row(
           children: sublist.map((foodSummary) {
-            return Expanded(
-              child: Column(
-                children: [
-                  Card(
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(150),
-                    ),
-                    child: InkWell(
-                      onTap: () {
-                      },
-                      child: Column(
-                        children: <Widget>[
-                          Image.asset(foodSummary.foodImagePath, width: 40),
-                        ],
-                      ),
-                    ),
+            return Column(
+              children: [
+                Card(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(150),
                   ),
-                  height5, // 간격을 만들기 위해 SizedBox 사용
-                  (foodSummary.foodName).text.size(14).bold.make(),
-                  height10,
-                ],
-              ),
+                  child: InkWell(
+                    onTap: () {
+                    },
+                    child: Image.asset(foodSummary.foodImagePath, width: deviceWidth * 0.1),
+                  ),
+                ), // 간격을 만들기 위해 SizedBox 사용
+                (foodSummary.foodName).text.size(deviceWidth * 0.036).bold.make(),
+                devicewidth5_1,
+              ],
             );
           }).toList(),
         ),

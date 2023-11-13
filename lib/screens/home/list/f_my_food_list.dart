@@ -22,11 +22,7 @@ class MyFoodListFragment extends StatelessWidget {
         ),
         const Expanded(
           child: SingleChildScrollView(
-            child: Column(
-              children: [
-                MySelectedList(),
-              ],
-            ),
+            child: MySelectedList(),
           ),
         ),
       ],

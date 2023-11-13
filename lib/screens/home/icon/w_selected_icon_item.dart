@@ -29,10 +29,8 @@ class _SelectedIconItemState extends State<SelectedIconItem> {
 
       items.add(
         Row(
-          mainAxisAlignment: MainAxisAlignment.start,
           children: sublist.map((foodSummary) {
             return Column(
-              crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 deviceheight40,
                 Card(
@@ -41,7 +39,6 @@ class _SelectedIconItemState extends State<SelectedIconItem> {
                   ),
                   child: InkWell(
                     onTap: () {
-                      // 탭 처리
                     },
                     child: Image.asset(foodSummary.foodImagePath, width: deviceWidth * 0.1),
                   ),
@@ -49,7 +46,6 @@ class _SelectedIconItemState extends State<SelectedIconItem> {
                 (foodSummary.foodName).text.size(deviceWidth * 0.036).bold.make(),
                 devicewidth4,
               ],
-
             );
 
           }).toList(),

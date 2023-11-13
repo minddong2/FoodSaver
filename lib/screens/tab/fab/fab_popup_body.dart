@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:refri_project/screens/tab/fab/w_all_food_icon.dart';
-import 'package:refri_project/screens/tab/food/food_list.dart';
+import 'package:refri_project/screens/tab/fab/w_all_icon_item.dart';
+import 'package:refri_project/screens/tab/food/all_food_list.dart';
 import 'package:refri_project/screens/tab/food/vo_food.dart';
 
 class PopUpItemBody extends StatelessWidget {
@@ -8,7 +8,7 @@ class PopUpItemBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    List<FoodSummary> foodSummaries = foodLists.toList();
+    List<FoodSummary> foodSummaries = allfoodLists.toList();
 
     return SizedBox(
       height: 400,
@@ -20,7 +20,7 @@ class PopUpItemBody extends StatelessWidget {
                 child: Column(
                   children: [
                     // 검색창 추가하기,
-                    AllIconWidget(foodSummaries),
+                    AllIconItem(foodSummaries),
                     const Divider(
                       color: Colors.black,
                       thickness: 0.2,

@@ -1,7 +1,7 @@
 import 'package:refri_project/common/constants.dart';
 import 'package:refri_project/screens/tab/food/vo_food.dart';
 
-List<FoodSummary> foodLists = [
+List<FoodSummary> allfoodLists = [
   FoodSummary(
       foodImagePath: '$basePath/food/meat.png',
       mainCategory: '육류',
@@ -202,4 +202,9 @@ List<FoodSummary> foodLists = [
       mainCategory: '육류2',
       middleCategory: '닭고기',
       foodName: '닭고기'),
+  FoodSummary(
+      foodImagePath: '$basePath/food/meat.png',
+      mainCategory: '육류1',
+      middleCategory: '소고기',
+      foodName: '테스트'),
 ];
