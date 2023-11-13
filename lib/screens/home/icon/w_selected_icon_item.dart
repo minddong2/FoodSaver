@@ -6,7 +6,7 @@ import 'package:velocity_x/velocity_x.dart';
 
 class SelectedIconItem extends StatefulWidget {
   final List<FoodSummary> myfoodList;
-  SelectedIconItem(this.myfoodList, {Key? key}) : super(key: key);
+  const SelectedIconItem(this.myfoodList, {Key? key}) : super(key: key);
   @override
   State<SelectedIconItem> createState() => _SelectedIconItemState();
 }
@@ -43,11 +43,7 @@ class _SelectedIconItemState extends State<SelectedIconItem> {
                     onTap: () {
                       // 탭 처리
                     },
-                    child: Column(
-                      children: <Widget>[
-                        Image.asset(foodSummary.foodImagePath, width: deviceWidth * 0.1),
-                      ],
-                    ),
+                    child: Image.asset(foodSummary.foodImagePath, width: deviceWidth * 0.1),
                   ),
                 ),
                 (foodSummary.foodName).text.size(deviceWidth * 0.036).bold.make(),

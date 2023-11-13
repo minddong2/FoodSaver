@@ -16,6 +16,12 @@ const height20 = Height(20);
 const height30 = Height(30);
 
 const devicewidth4 = DeviceWidth(4);
+const devicewidth10 = DeviceWidth(10);
+const devicewidth15 = DeviceWidth(15);
+const devicewidth20 = DeviceWidth(20);
+const devicewidth25 = DeviceWidth(25);
+const devicewidth30 = DeviceWidth(30);
+const devicewidth35 = DeviceWidth(35);
 
 const deviceheight40 = DeviceHeight(40);
 

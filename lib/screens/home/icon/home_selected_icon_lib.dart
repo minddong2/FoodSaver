@@ -53,11 +53,11 @@ class IngreDient extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double height = MediaQuery.of(context).size.height;
+    double deviceheight = MediaQuery.of(context).size.height;
     // print(type);
     return Container(
-        margin: EdgeInsets.only(top: type == 'Cold' ? 10 : (height / 2) - 60),
-        height: (height / 2) - 80,
+        margin: EdgeInsets.only(top: type == 'Cold' ? 10 : (deviceheight / 2) - 60),
+        height: (deviceheight / 2) - 80,
         child: DemoReorderableGrid(type: type));
   }
 }

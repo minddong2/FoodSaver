@@ -10,14 +10,25 @@ class SelectedListItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final deviceWidth = MediaQuery.of(context).size.width;
     return Container(
       color: Colors.white,
       padding: const EdgeInsets.symmetric(vertical: 10),
       child: Row(
         children: [
-          Image.asset(foodSummary.foodImagePath, width: 50),
-          width20,
-          (foodSummary.foodName).text.size(16).bold.make(),
+          Card(
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(150),
+            ),
+            child: InkWell(
+              onTap: () {
+                // 탭 처리
+              },
+              child: Image.asset(foodSummary.foodImagePath, width: deviceWidth * 0.1),
+            ),
+          ),
+          devicewidth20,
+          (foodSummary.foodName).text.size(deviceWidth * 0.036).bold.make(),
         ],
       ),
     );

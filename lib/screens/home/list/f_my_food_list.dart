@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:refri_project/common/widget/w_height_and_width.dart';
 import 'package:refri_project/screens/home/list/home_selected_list.dart';
 
 class MyFoodListFragment extends StatelessWidget {
@@ -6,23 +7,24 @@ class MyFoodListFragment extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final deviceWidth = MediaQuery.of(context).size.width;
     return Column(
       children: [
-        const Row(
+        Row(
           children: [
-            SizedBox(width: 10),
-            Text('상품', style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-            SizedBox(width: 30),
-            Text('재료명', style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
-            SizedBox(width: 150),
-            Text('유통기한', style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold)),
+            devicewidth35,
+            Text('상품', style: TextStyle(fontSize: (deviceWidth * 0.04), fontWeight: FontWeight.bold)),
+            devicewidth15,
+            Text('재료명', style: TextStyle(fontSize: (deviceWidth * 0.04), fontWeight: FontWeight.bold)),
+            devicewidth4,
+            Text('유통기한', style: TextStyle(fontSize: (deviceWidth * 0.04), fontWeight: FontWeight.bold)),
           ],
         ),
-        Expanded(
+        const Expanded(
           child: SingleChildScrollView(
             child: Column(
               children: [
-                getMyFoodList(context),
+                MySelectedList(),
               ],
             ),
           ),
@@ -30,12 +32,4 @@ class MyFoodListFragment extends StatelessWidget {
       ],
     );
   }
-
-
-
-  Widget getMyFoodList(BuildContext context) => const Column(
-    children: [
-      MySelectedList(),
-    ],
-  );
 }
